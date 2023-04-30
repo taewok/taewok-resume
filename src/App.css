@@ -1,0 +1,120 @@
+html {
+  background-color: rgba(247, 247, 247, 0.473);
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  padding: 15px 0;
+  font-size: 2.3rem;
+  border-bottom: 2px solid #bdbdbd;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  margin: 3px;
+  font-size: 1.3rem;
+}
+a {
+  padding: 0 0 5px 12px;
+  text-decoration: underline;
+  color: black;
+}
+
+main {
+  padding-top: 5vh;
+  width: 900px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.myprofile-box {
+  display: flex;
+  padding-top: 50px;
+}
+.myinfo-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 5px;
+  font-size: 1.2rem;
+}
+.myinfo-item span {
+  display: inline-flex;
+  font-size: 1.7rem;
+}
+
+.myinfo-list {
+  list-style: none;
+  padding: 10px 5px;
+  width: 70%;
+}
+
+.myimg-box {
+  width: 30%;
+}
+.myimg-box img {
+  width: 100%;
+}
+
+.projects-box {
+  padding-top: 50px;
+}
+
+.project-box {
+  display: flex;
+  padding-bottom: 50px;
+  width: 100%;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.project-info-box {
+  width: 50%;
+}
+
+.projectname {
+  margin: 0;
+}
+
+.project-period {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.project-detail-box {
+  width: 50%;
+}
+.project-detail-box p {
+  margin: 3px 0 30px 0;
+  padding-left: 5px;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-list {
+  margin: 0 0 30px 0;
+}
+
+.role-item {
+  padding: 5px 0;
+}
+
+.skill-name {
+  margin-bottom: 10px;
+}
+
+.skill-explain-list {
+  margin-bottom: 30px;
+}
+
+.skill-explain-item {
+  padding: 3px 0;
+}
