@@ -76,14 +76,14 @@ function App() {
               </p>
             </div>
             <div className="project-detail-box">
-              <h4>소개</h4>
+              <h4>[ 소개 ]</h4>
               <p>개발자을 위한 프로필카드 만들기 및 소통 사이트</p>
-              <h4>참여인원</h4>
+              <h4>[ 참여인원 ]</h4>
               <p className="team-members">
                 <span>Frontend: 2명</span>
                 <span>Backend: 2명</span>
               </p>
-              <h4>구현 내용</h4>
+              <h4>[ 구현 내용 ]</h4>
               <ul className="role-list">
                 <li className="role-item"><b>react-query</b>와 <b>throttle</b>를 사용해 일정 스크롤시 데이터를 추가로 받아오는 무한스크롤</li>
                 <li className="role-item"><b>Github Rest API</b>를 활용한 <b>github</b>연동 및 정보 표현</li>
@@ -91,7 +91,7 @@ function App() {
                 <li className="role-item">유저가 즐겨찾기 한 카드 유무에 따른 css 변화</li>
                 <li className="role-item">전반적인 퍼블리싱</li>
               </ul>
-              <h4>사용 기술</h4>
+              <h4>[ 사용 기술 ]</h4>
               <ul className="role-list">
                 <li className="role-item">React</li>
                 <li className="role-item">Styled-Components</li>
@@ -103,17 +103,18 @@ function App() {
           </div>
         </section>
         <section className="skill-box">
-          <h2>Skill</h2>
+          <h2>Skills</h2>
           <h3 className="skill-name">HTML/CSS</h3>
           <ul className="skill-explain-list">
-            <li className="skill-explain-item">마크업을 통한 구조적 설계 능력</li>
+            <li className="skill-explain-item">마크업에 대한 이해와 구조적 설계 능력</li>
             <li className="skill-explain-item">웹표준을 고려한 UI 설계</li>
-            <li className="skill-explain-item">viewPort에 따른 반응형 적용</li>
+            <li className="skill-explain-item">반응형 CSS 설계</li>
           </ul>
           <h3 className="skill-name">JavaScript</h3>
           <ul className="skill-explain-list">
             <li className="skill-explain-item">Vanilla JS 를 통한 DOM 조작</li>
-            <li className="skill-explain-item">ES6 문법 사용</li>
+            <li className="skill-explain-item">Vanilla JS 를 통한 Data 추출&가공</li>
+            <li className="skill-explain-item">ES6 문법 활용</li>
           </ul>
           <h3 className="skill-name">React</h3>
           <ul className="skill-explain-list">

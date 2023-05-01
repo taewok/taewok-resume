@@ -14,7 +14,9 @@ h3 {
   font-size: 1.7rem;
 }
 h4 {
-  margin: 3px;
+  margin: 3px 0 15px 0;
+  padding-top: 30px;
+  text-align: center;
   font-size: 1.3rem;
 }
 a {
@@ -68,11 +70,13 @@ h1 {
   display: flex;
   padding-bottom: 50px;
   width: 100%;
-  border-bottom: 2px solid #bdbdbd;
 }
 
 .project-info-box {
-  width: 50%;
+  position: sticky;
+  top: 20px;
+  width: 45%;
+  height: 100%;
 }
 
 .projectname {
@@ -87,16 +91,19 @@ h1 {
 }
 
 .project-detail-box {
-  width: 50%;
+  width: 55%;
 }
 .project-detail-box p {
   margin: 3px 0 30px 0;
   padding-left: 5px;
+  text-align: center;
 }
 
-.team-members {
-  display: flex;
-  flex-direction: column;
+.team-members{
+  text-align: center;
+}
+.team-members span{
+  margin-right: 10px;
 }
 
 .role-list {
