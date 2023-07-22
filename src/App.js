@@ -1,6 +1,6 @@
 import "./App.css";
-import { MdEmail, MdSpeakerNotes } from "react-icons/md";
-import { AiFillPhone, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { SiBloglovin } from "react-icons/si";
 
 function App() {
   return (
@@ -10,20 +10,16 @@ function App() {
           <h1>
             안녕하세요~!
             <br />
-            꽃아서 파고드는, 개발자 김태욱입니다.
+            프론트엔드 개발자 김태욱입니다.
           </h1>
           <div className="myprofile-box">
             <ul className="myinfo-list">
               <li className="myinfo-item">
-                <span>
-                  <MdEmail />
-                </span>
+                <span>📩</span>
                 <a href="mailto:taewok51615@gmail.com">taewok51615@gmail.com</a>
               </li>
               <li className="myinfo-item">
-                <span>
-                  <AiFillPhone />
-                </span>
+                <span>📞</span>
                 <a href="tel:010-2911-4961">010-2911-4961</a>
               </li>
               <li className="myinfo-item">
@@ -40,7 +36,7 @@ function App() {
               </li>
               <li className="myinfo-item">
                 <span>
-                  <MdSpeakerNotes />
+                  <SiBloglovin />
                 </span>
                 <a
                   href="https://taewok.github.io/"
@@ -57,71 +53,248 @@ function App() {
           </div>
         </section>
         <section className="projects-box">
-          <h2>Projects</h2>
+          <h2>📔 Projects</h2>
           <div className="project-box">
             <div className="project-info-box">
               <h3 className="projectname">Gridians</h3>
               <p className="project-period">23.01 ~ 23.02</p>
+              <ul className="skill-list">
+                <li className="skill-item">React</li>
+                <li className="skill-item">React-Query</li>
+                <li className="skill-item">Recoil</li>
+                <li className="skill-item">Styled-Components</li>
+              </ul>
+              <b>WedbSite</b>
               <p className="projecturl">
-                WedbSite:
                 <a href="https://www.gridians.site">
                   https://www.gridians.site
                 </a>
               </p>
+              <b>GithubSite</b>
               <p className="project-github-url">
-                GithubSite:
                 <a href="https://github.com/gridians/gridians-fe">
                   https://github.com/gridians/gridians-fe
                 </a>
               </p>
             </div>
             <div className="project-detail-box">
-              <h4>[ 소개 ]</h4>
+              <h4 className="center-text">[ 소개 ]</h4>
               <p>개발자을 위한 프로필카드 만들기 및 소통 사이트</p>
-              <h4>[ 참여인원 ]</h4>
+              <h4 className="center-text">[ 참여인원 ]</h4>
               <p className="team-members">
                 <span>Frontend: 2명</span>
                 <span>Backend: 2명</span>
               </p>
-              <h4>[ 구현 내용 ]</h4>
+              <h4 className="center-text">[ 맡은 내용 ]</h4>
               <ul className="role-list">
-                <li className="role-item"><b>react-query</b>와 <b>throttle</b>를 사용해 일정 스크롤시 데이터를 추가로 받아오는 무한스크롤</li>
-                <li className="role-item"><b>Github Rest API</b>를 활용한 <b>github</b>연동 및 정보 표현</li>
+                <li className="role-item">
+                  <b>react-query</b>와 <b>throttle</b>를 사용해 일정 스크롤시
+                  데이터를 추가로 받아오는 무한스크롤
+                </li>
+                <li className="role-item">
+                  <b>Github Rest API</b>를 활용한 <b>github</b>연동 및 정보 표현
+                </li>
                 <li className="role-item">프로필카드 생성 및 수정</li>
-                <li className="role-item">유저가 즐겨찾기 한 카드 유무에 따른 css 변화</li>
+                <li className="role-item">
+                  유저가 즐겨찾기 한 카드 유무에 따른 css 변화
+                </li>
                 <li className="role-item">전반적인 퍼블리싱</li>
               </ul>
-              <h4>[ 사용 기술 ]</h4>
+              <h4 className="center-text">[ 성장한 점 ]</h4>
+            </div>
+          </div>
+          <div className="project-box">
+            <div className="project-info-box">
+              <h3 className="projectname">Twogather</h3>
+              <p className="project-period">23.05 ~ 23.07</p>
+              <ul className="skill-list">
+                <li className="skill-item">React</li>
+                <li className="skill-item">TypeScript</li>
+                <li className="skill-item">React-Query</li>
+                <li className="skill-item">Recoil</li>
+                <li className="skill-item">Styled-Components</li>
+              </ul>
+              <b>WedbSite</b>
+              <p className="projecturl">
+                <a href="https://twogather.netlify.app">
+                  https://twogather.netlify.app
+                </a>
+              </p>
+              <b>GithubSite</b>
+              <p className="project-github-url">
+                <a href="https://github.com/TWOGATH3R/twogather-web-frontend">
+                  https://github.com/TWOGATH3R/twogather-web-frontend
+                </a>
+              </p>
+            </div>
+            <div className="project-detail-box">
+              <h4 className="center-text">[ 소개 ]</h4>
+              <p>
+                다양한 키워드를 사용하여 가게를 검색하고 리뷰를 남길 수 있는
+                맛집사이트
+              </p>
+              <h4 className="center-text">[ 참여인원 ]</h4>
+              <p className="team-members">
+                <span>Frontend: 3명</span>
+                <span>Backend: 2명</span>
+              </p>
+              <h4 className="center-text">[ 구현 내용 ]</h4>
+              <ul>
+                <li className="role-item">
+                  axios interceptors, create을 활용한 반복 코드 간결화
+                </li>
+                <li className="role-item">
+                  쿼리스트링을 활용한 url을 변경하는 것 만으로 원하는 검색결과와
+                  page 결과 얻기
+                </li>
+                <li className="role-item">
+                  지역, 카테고리, 메뉴 더보기, 사유 입력 등 모달창 컴포넌트 구현
+                </li>
+                <li className="role-item">
+                  로그인, 회원가입, pw찾기, id찾기, 댓글/대댓글 등록/삭제/수정
+                  구현
+                </li>
+                <li className="role-item">
+                  로그인, 회원가입, pw/id찾기, admin, home, mypage, 검색결과
+                  페이지 퍼블리싱
+                </li>
+                <li className="role-item">
+                  로컬 스토리지에 저장된 권한에 따른 ui와 기능
+                </li>
+                <li className="role-item">
+                  pagenation, Filter 컴포넌트를 따로 분리하여 재사용성 상승
+                </li>
+                <li className="role-item">
+                  react-cookie를 활용한 accessToken 관리
+                </li>
+                <li className="role-item">
+                  input 입력상태에 따른 양식 안내와 alert
+                </li>
+                <li className="role-item">가게 좋아요 추가/해제 기능</li>
+              </ul>
+              <h4 className="center-text">[ 성장, 문제해결 ]</h4>
               <ul className="role-list">
-                <li className="role-item">React</li>
-                <li className="role-item">Styled-Components</li>
-                <li className="role-item">React-Query</li>
-                <li className="role-item">Recoil</li>
-                <li className="role-item">React Router</li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/jwt-login%EB%B0%A9%EC%8B%9D/">
+                    jwt와 jwt + refreshToke + accessToken로그인 방식에 이해{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/jwt-Token-decoding/">
+                    <b>accessToken</b>에 <b>payload</b>를 <b>decoding</b>을
+                    통하여 정보 읽기 <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/axios-interceptors/#interceptors-%EC%82%AC%EC%9A%A9%EB%B2%95">
+                    axios interceptors를 사용해 api 통신 처리시 반복부분 간결화{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/No-QueryClient-set,-use-QueryClientProvider-to-set-one/">
+                    react-query import 에러해결 <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/Cannot-destructure-property-'data'-of-'(intermediate-value)'-as-it-is-undefined/">
+                    axios error 핸들링중 객체 안나오는 현상 문제해결{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/in-not-a-function/">
+                    타입스크립트 setState hook을 자식 컴포넌트로 전달할 떄 is
+                    not a function 문제해결 <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item">
+                  react-cookie를 활용한 accessToken 관리
+                </li>
               </ul>
             </div>
           </div>
         </section>
         <section className="skill-box">
-          <h2>Skills</h2>
-          <h3 className="skill-name">HTML/CSS</h3>
+          <h2>🔧 Skills</h2>
+          <h3 className="skill-name">HTML / CSS</h3>
           <ul className="skill-explain-list">
-            <li className="skill-explain-item">마크업에 대한 이해와 구조적 설계 능력</li>
-            <li className="skill-explain-item">웹표준을 고려한 UI 설계</li>
-            <li className="skill-explain-item">반응형 CSS 설계</li>
+            <li className="skill-explain-item">
+              시매틱 마크업에 대한 이해를 바탕으로 웹표준을 준수한 레이아웃 설계
+            </li>
+            <li className="skill-explain-item">
+              유동 그리드 레이아웃, 이미지, 미디어 쿼리 등을 이용한 반응형 웹
+              구현
+            </li>
+            <li className="skill-explain-item">
+              CSS의 가독성을 높이고, 유지보수에 용이한 SCSS 사용
+            </li>
+            <li className="skill-explain-item">
+              프로젝트의 디자인에 알맞은 스타일 적용
+            </li>
           </ul>
-          <h3 className="skill-name">JavaScript</h3>
+          <h3 className="skill-name">JavaScript / TypeScript</h3>
           <ul className="skill-explain-list">
-            <li className="skill-explain-item">Vanilla JS 를 통한 DOM 조작</li>
-            <li className="skill-explain-item">Vanilla JS 를 통한 Data 추출&가공</li>
-            <li className="skill-explain-item">ES6 문법 활용</li>
+            <li className="skill-explain-item">
+              JS, TS를 이용한 연산과 DOM 객체의 조작
+            </li>
+            <li className="skill-explain-item">
+              async/await 등을 활용한 비동기 작업 처리
+            </li>
+            <li className="skill-explain-item">
+              타입스크립트의 정적 타입 검사를 활용하여 코드 안정성을 높이고
+              런타임 에러를 사전에 방지
+            </li>
+            <li className="skill-explain-item">
+              인터페이스와 타입 정의를 사용하여 코드의 가독성과 재사용성 상승
+            </li>
+            <li className="skill-explain-item">함수형 프로그래밍 지향</li>
+            <li className="skill-explain-item">ES6 이상의 문법 사용</li>
           </ul>
           <h3 className="skill-name">React</h3>
           <ul className="skill-explain-list">
-            <li className="skill-explain-item">React Hook을 통한 변수 관리와 생명주기 기능을 사용 할 수 있다</li>
-            <li className="skill-explain-item">함수형 프로그래밍을 통한 효율적인 컴포넌트 분리</li>
+            <li className="skill-explain-item">
+              React Hook을 통한 변수 관리와 라이프 사이클에 적절한 활용
+            </li>
+            <li className="skill-explain-item">
+              컴포넌트의 재사용성을 고려한 컴포넌트 구현
+            </li>
             <li className="skill-explain-item">다양한 라이브러리 응용</li>
           </ul>
+        </section>
+        <section className="experience-box">
+          <h2>Experience</h2>
+          <div className="project-box">
+            <div className="project-info-box">
+              <h4>
+                오픈플랫폼을 활용한 마이크로 웹서비스 융합 개발자 양성 과정
+              </h4>
+              <h4>2021-07-30 ~ 2022-01-24</h4>
+            </div>
+            <div className="project-detail-box">
+              <h4 className="center-text" style={{ paddingTop: "0" }}>
+                [ 활동 내용 ]
+              </h4>
+              <ul style={{ paddingLeft: "30px" }}>
+                <li className="experience-list-item">
+                  데이터베이스 MySQL 기초
+                </li>
+                <li className="experience-list-item">JAVA 프로그래밍 기초</li>
+                <li className="experience-list-item">
+                  HTML, CSS, JavaScript, Jquery를 이용한 화면설계와 화면구현
+                </li>
+                <li className="experience-list-item">
+                  요구사항 정의서와 ERD 작성
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="education-box">
+          <h2>🏤 Education</h2>
+          <h3>경기경영고등학교</h3>
+          <h4>2018.03 ~ 2021.01</h4>
         </section>
       </main>
     </div>
