@@ -7,8 +7,9 @@ body {
 }
 h2 {
   padding: 15px 0;
-  font-size: 2.3rem;
+  font-size: 3rem;
   border-bottom: 2px solid #bdbdbd;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 h3 {
   font-size: 1.7rem;
@@ -20,7 +21,7 @@ h4 {
   margin: 3px 0 15px 0;
   padding-top: 30px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 a {
   text-decoration: underline;
@@ -59,9 +60,9 @@ h1 {
 }
 .myinfo-item span {
   display: inline-flex;
-  justify-content: center;
-  width: 36px;
-  font-size: 1.5rem;
+  width: 70px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .project-github-url,
@@ -155,6 +156,8 @@ h1 {
 
 .skill-name {
   margin-bottom: 10px;
+  color: #353535;
+  font-size: 2rem;
 }
 .skill-explain-list {
   margin-bottom: 30px;

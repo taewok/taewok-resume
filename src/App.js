@@ -1,8 +1,15 @@
+import { useLayoutEffect } from "react";
 import "./App.css";
 import { AiFillGithub } from "react-icons/ai";
 import { SiBloglovin } from "react-icons/si";
 
 function App() {
+  console.log(document.body.clientHeight);
+  useLayoutEffect(() => {
+    const bodyElement = document.body;
+    const height = bodyElement.clientHeight;
+    console.log(height);
+  }, []);
   return (
     <div className="container">
       <main>
@@ -15,17 +22,14 @@ function App() {
           <div className="myprofile-box">
             <ul className="myinfo-list">
               <li className="myinfo-item">
-                <span>📩</span>
+                <span>E-mail</span>:
                 <a href="mailto:taewok51615@gmail.com">taewok51615@gmail.com</a>
               </li>
               <li className="myinfo-item">
-                <span>📞</span>
-                <a href="tel:010-2911-4961">010-2911-4961</a>
+                <span>Phone</span>:<a href="tel:010-2911-4961">010-2911-4961</a>
               </li>
               <li className="myinfo-item">
-                <span>
-                  <AiFillGithub />
-                </span>
+                <span>Github</span>:
                 <a
                   href="https://github.com/taewok"
                   target="_blank"
@@ -35,9 +39,7 @@ function App() {
                 </a>
               </li>
               <li className="myinfo-item">
-                <span>
-                  <SiBloglovin />
-                </span>
+                <span>Blog</span>:
                 <a
                   href="https://taewok.github.io/"
                   target="_blank"
@@ -85,7 +87,7 @@ function App() {
                 <span>Frontend: 2명</span>
                 <span>Backend: 2명</span>
               </p>
-              <h4 className="center-text">[ 맡은 내용 ]</h4>
+              <h4 className="center-text">[ 구현 내용 ]</h4>
               <ul className="role-list">
                 <li className="role-item">
                   <b>react-query</b>와 <b>throttle</b>를 사용해 일정 스크롤시
@@ -100,7 +102,43 @@ function App() {
                 </li>
                 <li className="role-item">전반적인 퍼블리싱</li>
               </ul>
-              <h4 className="center-text">[ 성장한 점 ]</h4>
+              <h4 className="center-text">[ 성장, 문제해결 ]</h4>
+              <ul className="role-list">
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/async,await%EC%82%AC%EC%9A%A9/">
+                    비동기 작업을 동기적으로 처리하기 위한 async & await 사용{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/recoil/">
+                    상태관리 라이브러리인 Recoil을 사용한 전역 산태 관리{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/react-query/">
+                    데이터 관리 라이브러리인 React-Query 사용
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/react-lazy/">
+                    React 제공 함수인 lazy() 숙지 <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/jwt-login%EB%B0%A9%EC%8B%9D/">
+                    sweet alert2 라이브러리 사용 <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  타입스크립트의 정적 타입 검사를 활용하여 코드 안정성 상승
+                </li>
+                <li className="role-item grow-item">
+                  styled-components 라이브러리를 통한 컴포넌트 단위 스타일링
+                </li>
+              </ul>
             </div>
           </div>
           <div className="project-box">
@@ -193,8 +231,21 @@ function App() {
                   </a>
                 </li>
                 <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/path-Parameter/">
+                    Query String 형식을 이용한 URL경로를 통한 매개변수 전달{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
+                  <a href="https://taewok.github.io/posts/path-Parameter/">
+                    path parameter를 사용해 URL경로를 통한 변수 전달{" "}
+                    <SiBloglovin />
+                  </a>
+                </li>
+                <li className="role-item grow-item">
                   <a href="https://taewok.github.io/posts/No-QueryClient-set,-use-QueryClientProvider-to-set-one/">
-                    react-query import 에러해결 <SiBloglovin />
+                    react-query가 V4 업데이트로 인한 import 에러해결{" "}
+                    <SiBloglovin />
                   </a>
                 </li>
                 <li className="role-item grow-item">
@@ -234,13 +285,16 @@ function App() {
               프로젝트의 디자인에 알맞은 스타일 적용
             </li>
           </ul>
-          <h3 className="skill-name">JavaScript / TypeScript</h3>
+          <h3 className="skill-name">TypeScript / JavaScript</h3>
           <ul className="skill-explain-list">
             <li className="skill-explain-item">
               JS, TS를 이용한 연산과 DOM 객체의 조작
             </li>
             <li className="skill-explain-item">
               async/await 등을 활용한 비동기 작업 처리
+            </li>
+            <li className="skill-explain-item">
+              Rest API 기반의 서버 통신 및 데이터 처리
             </li>
             <li className="skill-explain-item">
               타입스크립트의 정적 타입 검사를 활용하여 코드 안정성을 높이고
@@ -250,7 +304,6 @@ function App() {
               인터페이스와 타입 정의를 사용하여 코드의 가독성과 재사용성 상승
             </li>
             <li className="skill-explain-item">함수형 프로그래밍 지향</li>
-            <li className="skill-explain-item">ES6 이상의 문법 사용</li>
           </ul>
           <h3 className="skill-name">React</h3>
           <ul className="skill-explain-list">
@@ -264,7 +317,7 @@ function App() {
           </ul>
         </section>
         <section className="experience-box">
-          <h2>Experience</h2>
+          <h2>🏃 Experience</h2>
           <div className="project-box">
             <div className="project-info-box">
               <h4>
