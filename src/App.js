@@ -4,12 +4,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiBloglovin } from "react-icons/si";
 
 function App() {
-  console.log(document.body.clientHeight);
-  useLayoutEffect(() => {
-    const bodyElement = document.body;
-    const height = bodyElement.clientHeight;
-    console.log(height);
-  }, []);
   return (
     <div className="container">
       <main>
@@ -19,17 +13,37 @@ function App() {
             <br />
             프론트엔드 개발자 김태욱입니다.
           </h1>
+        </section>
+        <section className="introduce-box">
+          <h2>🙇 About Me.</h2>
+          <div className="introduce-text-box">
+            안녕하세요 최고의 프론트엔드 개발자를 꿈꾸는 "김태욱"입니다.
+            <br />
+            <br />
+            저는 코드의 성능 향상을 위한 기술에 관심이 많으며 적극적으로
+            학습합니다. 인상 깊은 코드 혹은 기술을 블로그를 통해 기록하면서 더욱
+            깊게 공부하고 있습니다.
+            <br />
+            <br />
+            사용자가 편하고 부드러운 UI/UX를 경험하는 것을 중요하게 생각하며
+            그러기 위한 팀원간의 소통을 중요시합니다. 또한 새로운 조언이나
+            코멘트를 받는걸 좋아합니다. <br />
+            중복 없는 코드와 나중에도 이해하기 쉬운 코드를 쓰려고 노력합니다.
+            <br />
+          </div>
           <div className="myprofile-box">
             <ul className="myinfo-list">
+              <h3>Contact.</h3>
               <li className="myinfo-item">
-                <span>E-mail</span>:
+                <span>📧E-mail</span>:
                 <a href="mailto:taewok51615@gmail.com">taewok51615@gmail.com</a>
               </li>
               <li className="myinfo-item">
-                <span>Phone</span>:<a href="tel:010-2911-4961">010-2911-4961</a>
+                <span>📞Phone</span>:
+                <a href="tel:010-2911-4961">010-2911-4961</a>
               </li>
               <li className="myinfo-item">
-                <span>Github</span>:
+                <span>👨‍🔧Github</span>:
                 <a
                   href="https://github.com/taewok"
                   target="_blank"
@@ -39,7 +53,7 @@ function App() {
                 </a>
               </li>
               <li className="myinfo-item">
-                <span>Blog</span>:
+                <span>📑Blog</span>:
                 <a
                   href="https://taewok.github.io/"
                   target="_blank"
@@ -49,15 +63,20 @@ function App() {
                 </a>
               </li>
             </ul>
-            <div className="myimg-box">
+            {/* <div className="myimg-box">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH62fzQwFuoNZKHymSnGCnocX2NzSAiX9t5w&usqp=CAU" />
-            </div>
+            </div> */}
           </div>
         </section>
         <section className="projects-box">
-          <h2>📔 Projects</h2>
-          <div className="project-box">
+          <h2>📔 Projects.</h2>
+          <div className="project-box" style={{ paddingBottom: "100px" }}>
             <div className="project-info-box">
+              <img
+                style={{ background: "black" }}
+                src="https://github.com/taewok/baek-jun/assets/88264006/4f0bda1e-3ca8-466d-8405-1f70d5d95c6b"
+                alt="gridians 프로젝트 아이콘"
+              />
               <h3 className="projectname">Gridians</h3>
               <p className="project-period">23.01 ~ 23.02</p>
               <ul className="skill-list">
@@ -96,10 +115,16 @@ function App() {
                 <li className="role-item">
                   <b>Github Rest API</b>를 활용한 <b>github</b>연동 및 정보 표현
                 </li>
-                <li className="role-item">프로필카드 생성 및 수정</li>
+                <li className="role-item">
+                  react-github-calendar 라이브러리를 사용해 잔디 생성
+                </li>
                 <li className="role-item">
                   유저가 즐겨찾기 한 카드 유무에 따른 css 변화
                 </li>
+                <li className="role-item">
+                  react-slick 라이브러리를 이용한 슬라이드 생성
+                </li>
+                <li className="role-item">프로필카드 생성 및 수정</li>
                 <li className="role-item">전반적인 퍼블리싱</li>
               </ul>
               <h4 className="center-text">[ 성장, 문제해결 ]</h4>
@@ -133,9 +158,6 @@ function App() {
                   </a>
                 </li>
                 <li className="role-item grow-item">
-                  타입스크립트의 정적 타입 검사를 활용하여 코드 안정성 상승
-                </li>
-                <li className="role-item grow-item">
                   styled-components 라이브러리를 통한 컴포넌트 단위 스타일링
                 </li>
               </ul>
@@ -143,6 +165,11 @@ function App() {
           </div>
           <div className="project-box">
             <div className="project-info-box">
+              <img
+                style={{ background: "black" }}
+                src="https://user-images.githubusercontent.com/66842566/247418355-39335476-6b15-4ff3-be52-be5b47dbbd10.png"
+                alt="twogather 프로젝트 아이콘"
+              />
               <h3 className="projectname">Twogather</h3>
               <p className="project-period">23.05 ~ 23.07</p>
               <ul className="skill-list">
@@ -260,6 +287,9 @@ function App() {
                     not a function 문제해결 <SiBloglovin />
                   </a>
                 </li>
+                <li className="role-item grow-item">
+                  타입스크립트의 정적 타입 검사 활용
+                </li>
                 <li className="role-item">
                   react-cookie를 활용한 accessToken 관리
                 </li>
@@ -268,7 +298,7 @@ function App() {
           </div>
         </section>
         <section className="skill-box">
-          <h2>🔧 Skills</h2>
+          <h2>🔧 Skills.</h2>
           <h3 className="skill-name">HTML / CSS</h3>
           <ul className="skill-explain-list">
             <li className="skill-explain-item">
@@ -317,13 +347,15 @@ function App() {
           </ul>
         </section>
         <section className="experience-box">
-          <h2>🏃 Experience</h2>
+          <h2>🏃 Experience.</h2>
           <div className="project-box">
             <div className="project-info-box">
               <h4>
                 오픈플랫폼을 활용한 마이크로 웹서비스 융합 개발자 양성 과정
               </h4>
-              <h4>2021-07-30 ~ 2022-01-24</h4>
+              <ul>
+                <li className="date">2021-07-30 ~ 2022-01-24</li>
+              </ul>
             </div>
             <div className="project-detail-box">
               <h4 className="center-text" style={{ paddingTop: "0" }}>
@@ -345,9 +377,12 @@ function App() {
           </div>
         </section>
         <section className="education-box">
-          <h2>🏤 Education</h2>
-          <h3>경기경영고등학교</h3>
-          <h4>2018.03 ~ 2021.01</h4>
+          <h2>🏤 Education.</h2>
+          <h3 className="education-name">경기경영고등학교</h3>
+          <h3 className="education-type">스마트콘텐츠과</h3>
+          <ul>
+            <li className="date">2018.03 ~ 2021.01 (졸업)</li>
+          </ul>
         </section>
       </main>
     </div>

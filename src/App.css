@@ -10,6 +10,7 @@ h2 {
   font-size: 3rem;
   border-bottom: 2px solid #bdbdbd;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
 }
 h3 {
   font-size: 1.7rem;
@@ -25,6 +26,8 @@ h4 {
 }
 a {
   text-decoration: underline;
+  text-decoration: underline;
+  text-underline-position: under;
   color: black;
 }
 ol {
@@ -40,29 +43,31 @@ main {
   padding-top: 5vh;
   width: 900px;
 }
+section {
+  padding: 20px 0;
+}
 
 h1 {
   font-size: 2.5rem;
 }
 
 .myprofile-box {
-  display: flex;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .myinfo-item {
   display: flex;
   align-items: center;
   padding: 8px 5px;
-  font-size: 1.2rem;
 }
 .myinfo-item > a {
   padding-left: 10px;
+  font-size: 1.2rem;
 }
 .myinfo-item span {
   display: inline-flex;
-  width: 70px;
   font-size: 1.2rem;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .project-github-url,
@@ -72,8 +77,8 @@ h1 {
 
 .myinfo-list {
   list-style: none;
-  padding: 10px 5px;
-  width: 70%;
+  padding: 0;
+  width: 100%;
 }
 
 .myimg-box {
@@ -89,7 +94,6 @@ h1 {
 
 .project-box {
   display: flex;
-  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -98,6 +102,12 @@ h1 {
   top: 20px;
   width: 40%;
   height: 100%;
+}
+.project-info-box > img {
+  width: 80%;
+  height: 80px;
+  border-radius: 15px;
+  border: 2px solid gray;
 }
 
 .projectname {
@@ -135,8 +145,8 @@ h1 {
   padding: 5px 0;
 }
 
-.grow-item:hover {
-  transform: translateY(-4px);
+.grow-item:hover > a {
+  color: rgb(0, 165, 165);
 }
 
 .skill-list {
@@ -151,13 +161,14 @@ h1 {
   margin-bottom: 4px;
   padding: 3px 10px;
   width: fit-content;
-  border: 2px solid rgb(8, 0, 54);
+  border-radius: 10px;
+  background: gray;
+  color: white;
 }
 
 .skill-name {
   margin-bottom: 10px;
   color: #353535;
-  font-size: 2rem;
 }
 .skill-explain-list {
   margin-bottom: 30px;
@@ -166,4 +177,27 @@ h1 {
 .skill-explain-item,
 .experience-list-item {
   padding: 3px 0;
+}
+
+.education-name {
+  margin-bottom: 10px;
+}
+.education-type {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: rgb(63, 63, 63);
+}
+.date {
+  margin-top: 0px;
+  color: gray;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.introduce-text-box {
+  padding: 10px 15px 10px 15px;
+  /* background-color: #e4e4e4;
+  border-radius: 10px; */
+  border-left: 5px solid #00b5ad;
+  font-size: 1.3rem;
 }
