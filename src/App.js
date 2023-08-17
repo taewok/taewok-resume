@@ -1,6 +1,4 @@
-import { useLayoutEffect } from "react";
 import "./App.css";
-import { AiFillGithub } from "react-icons/ai";
 import { SiBloglovin } from "react-icons/si";
 
 function App() {
