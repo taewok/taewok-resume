@@ -300,7 +300,7 @@ function App() {
           <h3 className="skill-name">HTML / CSS</h3>
           <ul className="skill-explain-list">
             <li className="skill-explain-item">
-              시매틱 마크업에 대한 이해를 바탕으로 웹표준을 준수한 레이아웃 설계
+              시맨틱 마크업에 대한 이해를 바탕으로 웹표준을 준수한 레이아웃 설계
             </li>
             <li className="skill-explain-item">
               유동 그리드 레이아웃, 이미지, 미디어 쿼리 등을 이용한 반응형 웹
