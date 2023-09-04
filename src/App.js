@@ -256,7 +256,7 @@ function App() {
                   </a>
                 </li>
                 <li className="role-item grow-item">
-                  <a href="https://taewok.github.io/posts/path-Parameter/">
+                  <a href="https://taewok.github.io/posts/query-string/">
                     Query String 형식을 이용한 URL경로를 통한 매개변수 전달{" "}
                     <SiBloglovin />
                   </a>
