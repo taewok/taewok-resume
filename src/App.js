@@ -20,7 +20,7 @@ function App() {
               <a href="mailto:taewok51615@gmail.com">taewok51615@gmail.com</a>
             </li>
             <li className="myinfo-item">
-              <span>Phone</span>:<a href="tel:010-2911-4961">010-2911-4961</a>
+              <span>Phone</span>:<a href="tel:010-2911-4961">010-xxxx-xxxx</a>
             </li>
             <li className="myinfo-item">
               <span>Github</span>:
